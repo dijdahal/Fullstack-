@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <!--
   ╔══════════════════════════════════════════════════════════════╗
-  ║  DIJDAHAL — Personal Developer Portfolio                     ║
-  ║  CET138 Full Stack Development — Assignment                  ║
-  ║  Design Direction: Warm Obsidian — deep blacks warmed with   ║
+  ║  DIJDAHAL  Personal Developer Portfolio                     ║
+  ║  CET138 Full Stack Development  Assignment                  ║
+  ║  Design Direction: Warm Obsidian  deep blacks warmed with   ║
   ║  ember-gold accents and soft rose highlights                 ║
   ╚══════════════════════════════════════════════════════════════╝
 -->
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dijdahal — Full Stack Portfolio</title>
+  <title>Dijdahal Full Stack Portfolio</title>
 
   <!-- Bootstrap 5.3 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
   <!-- Bootstrap Icons -->
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
   <!-- Google Fonts: Syne (display) + DM Sans (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap"
     rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
@@ -34,193 +33,192 @@
 
 <body>
 
-<!-- ═══════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════
      NAVBAR
      Requirement: Bootstrap 5.3 fixed sticky top with theme toggle
      ═══════════════════════════════════════════════════════════ -->
-<nav class="dj-nav navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Main navigation">
-  <div class="container-xl">
+  <nav class="dj-nav navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Main navigation">
+    <div class="container-xl">
 
-    <!-- Wordmark -->
-    <a class="dj-wordmark navbar-brand" href="#hero">
-      <span class="wm-dij">dij</span><span class="wm-dahal">dahal</span>
-      <span class="wm-dot"></span>
-    </a>
+      <!-- Wordmark -->
+      <a class="dj-wordmark navbar-brand" href="#hero">
+        <span class="wm-dij">dij</span><span class="wm-dahal">dahal</span>
+        <span class="wm-dot"></span>
+      </a>
 
-    <!-- Mobile toggle -->
-    <button class="dj-toggler navbar-toggler" type="button"
-      data-bs-toggle="collapse" data-bs-target="#navContent"
-      aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="bi bi-list"></i>
-    </button>
+      <!-- Mobile toggle -->
+      <button class="dj-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+        aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navContent">
-      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-        <li class="nav-item"><a class="dj-navlink nav-link" href="#fullstack">Full Stack</a></li>
-        <li class="nav-item"><a class="dj-navlink nav-link" href="#html-grid">HTML &amp; Grid</a></li>
-        <li class="nav-item"><a class="dj-navlink nav-link" href="#css-motion">CSS Motion</a></li>
-        <li class="nav-item"><a class="dj-navlink nav-link" href="#js-engine">JS Engine</a></li>
-        <!-- Requirement: animated theme toggle in navbar -->
-        <li class="nav-item ms-lg-3">
-          <button id="themeToggle" class="dj-theme-btn" aria-label="Switch colour theme">
-            <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
-            <span id="themeLabel">Light</span>
-          </button>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="dj-navlink nav-link" href="#fullstack">Full Stack</a></li>
+          <li class="nav-item"><a class="dj-navlink nav-link" href="#html-grid">HTML &amp; Grid</a></li>
+          <li class="nav-item"><a class="dj-navlink nav-link" href="#css-motion">CSS Motion</a></li>
+          <li class="nav-item"><a class="dj-navlink nav-link" href="#js-engine">JS Engine</a></li>
+          <!-- Requirement: animated theme toggle in navbar -->
+          <li class="nav-item ms-lg-3">
+            <button id="themeToggle" class="dj-theme-btn" aria-label="Switch colour theme">
+              <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+              <span id="themeLabel">Light</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
     </div>
+  </nav>
 
-  </div>
-</nav>
-
-<!-- ═══════════════════════════════════════════════════════════
-     HERO — Personal, editorial, full-viewport
+  <!-- ═══════════════════════════════════════════════════════════
+     HERO  Personal, editorial, full-viewport
      Requirement: <header> semantic element
      ═══════════════════════════════════════════════════════════ -->
-<header id="hero" class="dj-hero">
-  <div class="container-xl">
-    <div class="row align-items-center g-5 min-vh">
+  <header id="hero" class="dj-hero">
+    <div class="container-xl">
+      <div class="row align-items-center g-5 min-vh">
 
-      <!-- Left: identity & intro -->
-      <div class="col-12 col-lg-7 hero-left">
+        <!-- Left: identity & intro -->
+        <div class="col-12 col-lg-7 hero-left">
 
-        <p class="hero-label">CET138 — Full Stack Development</p>
+          <p class="hero-label">CET138 Full Stack Development</p>
 
-        <h1 class="hero-name">
-          <span class="hero-name-dij">Dij</span><span class="hero-name-dahal">dahal</span>
-        </h1>
+          <h1 class="hero-name">
+            <span class="hero-name-dij">Dij</span><span class="hero-name-dahal">dahal</span>
+          </h1>
 
-        <p class="hero-tagline">
-          First-year IT student. Building the web
-          from the&nbsp;<span class="tag-front">front</span> to the&nbsp;<span class="tag-back">back</span>.
-        </p>
+          <p class="hero-tagline">
+            First-year IT student. Building the web
+            from the&nbsp;<span class="tag-front">front</span> to the&nbsp;<span class="tag-back">back</span>.
+          </p>
 
-        <p class="hero-bio">
-          This ePortfolio is a living proof-of-concept — five interactive sections demonstrating
-          Bootstrap 5.3 grid systems, semantic HTML5, custom CSS3 keyframe animations,
-          and a vanilla JavaScript state engine. All written from scratch, no shortcuts.
-        </p>
+          <p class="hero-bio">
+            This ePortfolio is a living proof-of-concept five interactive sections demonstrating
+            Bootstrap 5.3 grid systems, semantic HTML5, custom CSS3 keyframe animations,
+            and a vanilla JavaScript state engine. All written from scratch, no shortcuts.
+          </p>
 
-        <div class="hero-cta-row">
-          <a href="#fullstack" class="dj-btn-primary">Explore the work</a>
-          <a href="#js-engine" class="dj-btn-ghost"><i class="bi bi-terminal me-2"></i>Open terminal</a>
-        </div>
-      </div>
-
-      <!-- Right: decorative avatar / monogram block -->
-      <div class="col-12 col-lg-5 hero-right d-flex justify-content-center">
-        <div class="hero-monogram-wrap">
-          <div class="hero-monogram" aria-hidden="true">
-            <span class="mono-letter mono-d">D</span>
-          </div>
-          <div class="hero-badge-row">
-            <span class="h-badge"><i class="bi bi-layers-half me-1"></i>Full Stack</span>
-            <span class="h-badge h-badge--rose"><i class="bi bi-palette2 me-1"></i>Creative</span>
-            <span class="h-badge h-badge--amber"><i class="bi bi-mortarboard me-1"></i>First Year</span>
-          </div>
-          <!-- Floating decorative code snippets -->
-          <div class="float-snippet float-snippet--tl" aria-hidden="true">
-            <code>&lt;div class="me"&gt;</code>
-          </div>
-          <div class="float-snippet float-snippet--br" aria-hidden="true">
-            <code>console.log(dijdahal)</code>
+          <div class="hero-cta-row">
+            <a href="#fullstack" class="dj-btn-primary">Explore the work</a>
+            <a href="#js-engine" class="dj-btn-ghost"><i class="bi bi-terminal me-2"></i>Open terminal</a>
           </div>
         </div>
-      </div>
 
+        <!-- Right: decorative avatar / monogram block -->
+        <div class="col-12 col-lg-5 hero-right d-flex justify-content-center">
+          <div class="hero-monogram-wrap">
+            <div class="hero-monogram" aria-hidden="true">
+              <span class="mono-letter mono-d">D</span>
+            </div>
+            <div class="hero-badge-row">
+              <span class="h-badge"><i class="bi bi-layers-half me-1"></i>Full Stack</span>
+              <span class="h-badge h-badge--rose"><i class="bi bi-palette2 me-1"></i>Creative</span>
+              <span class="h-badge h-badge--amber"><i class="bi bi-mortarboard me-1"></i>First Year</span>
+            </div>
+            <!-- Floating decorative code snippets -->
+            <div class="float-snippet float-snippet--tl" aria-hidden="true">
+              <code>&lt;div class="me"&gt;</code>
+            </div>
+            <div class="float-snippet float-snippet--br" aria-hidden="true">
+              <code>console.log(dijdahal)</code>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
 
-  <!-- Decorative background shapes -->
-  <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
-  <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
-</header>
+    <!-- Decorative background shapes -->
+    <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+  </header>
 
-<!-- ═══════════════════════════════════════════════════════════
-     MAIN — five module sections
+  <!-- ═══════════════════════════════════════════════════════════
+     MAIN  five module sections
      ═══════════════════════════════════════════════════════════ -->
-<main id="main-content">
+  <main id="main-content">
 
-  <!--  
-       SECTION 1 — WHAT IS FULL STACK DEVELOPMENT?
+    <!--  
+       SECTION 1  WHAT IS FULL STACK DEVELOPMENT?
        Requirement: HTML5 semantics (section, article) +
        side-by-side cards + <pre><code> JSON block
         -->
-  <section id="fullstack" class="dj-section" aria-labelledby="fs-title">
-    <div class="container-xl">
+    <section id="fullstack" class="dj-section" aria-labelledby="fs-title">
+      <div class="container-xl">
 
-      <div class="dj-section-head">
-        <span class="dj-eyebrow">01 / Full Stack Development</span>
-        <h2 class="dj-section-title" id="fs-title">Two sides, one product</h2>
-        <p class="dj-section-sub">
-          Full stack development means owning both sides of the web — the interface
-          a person touches and the engine that powers it.
-        </p>
-      </div>
-
-      <!-- Requirement: side-by-side Front-End / Back-End article cards -->
-      <div class="row g-4 mb-5">
-
-        <article class="col-12 col-md-6">
-          <div class="dj-card dj-card--front h-100">
-            <div class="dj-card-accent dj-card-accent--amber"></div>
-            <span class="dj-card-tag dj-card-tag--amber">
-              <i class="bi bi-display me-1"></i>Client-Side
-            </span>
-            <h3 class="dj-card-title">Front-End</h3>
-            <p class="dj-card-desc">
-              Everything the user sees and touches. Built in the browser,
-              rendered on their screen, reacting to their every click.
-            </p>
-            <ul class="dj-list">
-              <li><i class="bi bi-arrow-right-short"></i>HTML5 — Semantic Document Structure</li>
-              <li><i class="bi bi-arrow-right-short"></i>CSS3 / Bootstrap 5.3 — Styling &amp; Layout</li>
-              <li><i class="bi bi-arrow-right-short"></i>JavaScript ES6+ — Live Interactivity</li>
-              <li><i class="bi bi-arrow-right-short"></i>React / Vue — Component Frameworks</li>
-              <li><i class="bi bi-arrow-right-short"></i>Fetch API — Consuming REST endpoints</li>
-            </ul>
-            <p class="dj-card-footer-note">Runs in: <strong>Browser</strong></p>
-          </div>
-        </article>
-
-        <article class="col-12 col-md-6">
-          <div class="dj-card dj-card--back h-100">
-            <div class="dj-card-accent dj-card-accent--rose"></div>
-            <span class="dj-card-tag dj-card-tag--rose">
-              <i class="bi bi-server me-1"></i>Server-Side
-            </span>
-            <h3 class="dj-card-title">Back-End</h3>
-            <p class="dj-card-desc">
-              The invisible engine. Processes requests, runs business logic,
-              talks to databases — never seen, always felt.
-            </p>
-            <ul class="dj-list">
-              <li><i class="bi bi-arrow-right-short"></i>Node.js / Python / PHP — Server Runtimes</li>
-              <li><i class="bi bi-arrow-right-short"></i>Express / Django / Laravel — Frameworks</li>
-              <li><i class="bi bi-arrow-right-short"></i>REST / GraphQL — API Design</li>
-              <li><i class="bi bi-arrow-right-short"></i>MySQL / MongoDB — Data Persistence</li>
-              <li><i class="bi bi-arrow-right-short"></i>JWT / OAuth — Auth &amp; Security</li>
-            </ul>
-            <p class="dj-card-footer-note">Runs on: <strong>Server</strong></p>
-          </div>
-        </article>
-
-      </div>
-
-      <!-- Requirement: syntax-highlighted JSON in <pre><code> -->
-      <div class="dj-code-window">
-        <div class="dj-code-bar">
-          <span class="dot dot-r"></span>
-          <span class="dot dot-a"></span>
-          <span class="dot dot-g"></span>
-          <span class="code-filename">dijdahal-stack.json</span>
+        <div class="dj-section-head">
+          <span class="dj-eyebrow">01 / Full Stack Development</span>
+          <h2 class="dj-section-title" id="fs-title">Two sides, one product</h2>
+          <p class="dj-section-sub">
+            Full stack development means owning both sides of the web the interface
+            a person touches and the engine that powers it.
+          </p>
         </div>
-        <pre class="dj-pre" aria-label="Full stack architecture overview"><code>{
+
+        <!-- Requirement: side-by-side Front-End / Back-End article cards -->
+        <div class="row g-4 mb-5">
+
+          <article class="col-12 col-md-6">
+            <div class="dj-card dj-card--front h-100">
+              <div class="dj-card-accent dj-card-accent--amber"></div>
+              <span class="dj-card-tag dj-card-tag--amber">
+                <i class="bi bi-display me-1"></i>Client-Side
+              </span>
+              <h3 class="dj-card-title">Front-End</h3>
+              <p class="dj-card-desc">
+                Everything the user sees and touches. Built in the browser,
+                rendered on their screen, reacting to their every click.
+              </p>
+              <ul class="dj-list">
+                <li><i class="bi bi-arrow-right-short"></i>HTML5 Semantic Document Structure</li>
+                <li><i class="bi bi-arrow-right-short"></i>CSS3 / Bootstrap 5.3 Styling &amp; Layout</li>
+                <li><i class="bi bi-arrow-right-short"></i>JavaScript ES6+ Live Interactivity</li>
+                <li><i class="bi bi-arrow-right-short"></i>React / Vue Component Frameworks</li>
+                <li><i class="bi bi-arrow-right-short"></i>Fetch API Consuming REST endpoints</li>
+              </ul>
+              <p class="dj-card-footer-note">Runs in: <strong>Browser</strong></p>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6">
+            <div class="dj-card dj-card--back h-100">
+              <div class="dj-card-accent dj-card-accent--rose"></div>
+              <span class="dj-card-tag dj-card-tag--rose">
+                <i class="bi bi-server me-1"></i>Server-Side
+              </span>
+              <h3 class="dj-card-title">Back-End</h3>
+              <p class="dj-card-desc">
+                The invisible engine. Processes requests, runs business logic,
+                talks to databases never seen, always felt.
+              </p>
+              <ul class="dj-list">
+                <li><i class="bi bi-arrow-right-short"></i>Node.js / Python / PHP Server Runtimes</li>
+                <li><i class="bi bi-arrow-right-short"></i>Express / Django / Laravel Frameworks</li>
+                <li><i class="bi bi-arrow-right-short"></i>REST / GraphQL API Design</li>
+                <li><i class="bi bi-arrow-right-short"></i>MySQL / MongoDB Data Persistence</li>
+                <li><i class="bi bi-arrow-right-short"></i>JWT / OAuth Auth &amp; Security</li>
+              </ul>
+              <p class="dj-card-footer-note">Runs on: <strong>Server</strong></p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Requirement: syntax-highlighted JSON in <pre><code> -->
+        <div class="dj-code-window">
+          <div class="dj-code-bar">
+            <span class="dot dot-r"></span>
+            <span class="dot dot-a"></span>
+            <span class="dot dot-g"></span>
+            <span class="code-filename">dijdahal-stack.json</span>
+          </div>
+          <pre class="dj-pre" aria-label="Full stack architecture overview"><code>{
   <span class="jk">"developer"</span>: <span class="js">"Dijdahal"</span>,
   <span class="jk">"module"</span>:    <span class="js">"CET138 Full Stack Development"</span>,
   <span class="jk">"stack"</span>: {
     <span class="jk">"frontend"</span>: {
-      <span class="jk">"markup"</span>:    <span class="js">"HTML5 — Semantic Elements"</span>,
+      <span class="jk">"markup"</span>:    <span class="js">"HTML5  Semantic Elements"</span>,
       <span class="jk">"styling"</span>:   <span class="js">"CSS3 + Bootstrap 5.3"</span>,
       <span class="jk">"scripting"</span>: <span class="js">"Vanilla JavaScript ES6+"</span>,
       <span class="jk">"icons"</span>:     <span class="js">"Bootstrap Icons 1.11"</span>
@@ -239,307 +237,308 @@
   <span class="jk">"deployed"</span>: <span class="jb">true</span>,
   <span class="jk">"version"</span>:  <span class="js">"1.0.0"</span>
 }</code></pre>
+        </div>
+
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- ──────────────────────────────────────────────────────────
-       SECTION 2 & 3 — HTML5 + BOOTSTRAP GRID DEMO
+    <!-- ──────────────────────────────────────────────────────────
+       SECTION 2 & 3  HTML5 + BOOTSTRAP GRID DEMO
        Requirement: 3 cards in Bootstrap grid, hover elevation
        with transform: translateY(-6px) + cubic-bezier transition
        ────────────────────────────────────────────────────────── -->
-  <section id="html-grid" class="dj-section dj-section--alt" aria-labelledby="grid-title">
-    <div class="container-xl">
+    <section id="html-grid" class="dj-section dj-section--alt" aria-labelledby="grid-title">
+      <div class="container-xl">
 
-      <div class="dj-section-head">
-        <span class="dj-eyebrow">02 &amp; 03 / HTML5 &amp; Bootstrap Grid</span>
-        <h2 class="dj-section-title" id="grid-title">Structure that flexes</h2>
-        <p class="dj-section-sub">
-          Bootstrap's 12-column grid rearranges these cards as the viewport changes.
-          Hover each to feel the micro-interaction.
-        </p>
-      </div>
+        <div class="dj-section-head">
+          <span class="dj-eyebrow">02 &amp; 03 / HTML5 &amp; Bootstrap Grid</span>
+          <h2 class="dj-section-title" id="grid-title">Structure that flexes</h2>
+          <p class="dj-section-sub">
+            Bootstrap's 12-column grid rearranges these cards as the viewport changes.
+            Hover each to feel the micro-interaction.
+          </p>
+        </div>
 
-      <!-- Live breakpoint bar -->
-      <div class="dj-bp-bar mb-5" role="status" aria-live="polite" aria-label="Current Bootstrap breakpoint">
-        <span class="bp-label">Active breakpoint:</span>
-        <span class="bp-pill bp-pill--xs" id="bp-xs">XS <em>&lt;576px</em></span>
-        <span class="bp-pill" id="bp-sm">SM <em>≥576</em></span>
-        <span class="bp-pill" id="bp-md">MD <em>≥768</em></span>
-        <span class="bp-pill" id="bp-lg">LG <em>≥992</em></span>
-        <span class="bp-pill" id="bp-xl">XL <em>≥1200</em></span>
-      </div>
+        <!-- Live breakpoint bar -->
+        <div class="dj-bp-bar mb-5" role="status" aria-live="polite" aria-label="Current Bootstrap breakpoint">
+          <span class="bp-label">Active breakpoint:</span>
+          <span class="bp-pill bp-pill--xs" id="bp-xs">XS <em>&lt;576px</em></span>
+          <span class="bp-pill" id="bp-sm">SM <em>≥576</em></span>
+          <span class="bp-pill" id="bp-md">MD <em>≥768</em></span>
+          <span class="bp-pill" id="bp-lg">LG <em>≥992</em></span>
+          <span class="bp-pill" id="bp-xl">XL <em>≥1200</em></span>
+        </div>
 
-      <!--
+        <!--
         Bootstrap 12-col grid:
         col-12 (mobile) → col-md-6 (tablet) → col-lg-4 (desktop)
       -->
-      <div class="row g-4">
+        <div class="row g-4">
 
-        <!-- Card 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="dj-hover-card h-100">
-            <div class="dhc-icon dhc-icon--amber">
-              <i class="bi bi-code-slash"></i>
-            </div>
-            <h3 class="dhc-title">HTML5 Semantics</h3>
-            <p class="dhc-desc">
-              Semantic elements give meaning beyond appearance. They guide screen readers,
-              search crawlers, and browsers — turning a visual layout into a structured document.
-            </p>
-            <div class="dhc-tags">
-              <code>&lt;header&gt;</code><code>&lt;nav&gt;</code><code>&lt;main&gt;</code>
-              <code>&lt;section&gt;</code><code>&lt;article&gt;</code><code>&lt;aside&gt;</code>
-              <code>&lt;footer&gt;</code>
-            </div>
-          </article>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="dj-hover-card h-100">
-            <div class="dhc-icon dhc-icon--rose">
-              <i class="bi bi-layout-three-columns"></i>
-            </div>
-            <h3 class="dhc-title">Bootstrap 12-Col Grid</h3>
-            <p class="dhc-desc">
-              Bootstrap wraps CSS Flexbox into a named, breakpoint-driven 12-column system.
-              Columns collapse on mobile and expand at higher viewports — mobile-first by default.
-            </p>
-            <!-- Mini visual grid -->
-            <div class="mini-grid">
-              <div class="mg-row"><div class="mg-col full"><code>col-12</code></div></div>
-              <div class="mg-row">
-                <div class="mg-col half"><code>col-md-6</code></div>
-                <div class="mg-col half"><code>col-md-6</code></div>
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="dj-hover-card h-100">
+              <div class="dhc-icon dhc-icon--amber">
+                <i class="bi bi-code-slash"></i>
               </div>
-              <div class="mg-row">
-                <div class="mg-col third"><code>col-lg-4</code></div>
-                <div class="mg-col third"><code>col-lg-4</code></div>
-                <div class="mg-col third"><code>col-lg-4</code></div>
+              <h3 class="dhc-title">HTML5 Semantics</h3>
+              <p class="dhc-desc">
+                Semantic elements give meaning beyond appearance. They guide screen readers,
+                search crawlers, and browsers turning a visual layout into a structured document.
+              </p>
+              <div class="dhc-tags">
+                <code>&lt;header&gt;</code><code>&lt;nav&gt;</code><code>&lt;main&gt;</code>
+                <code>&lt;section&gt;</code><code>&lt;article&gt;</code><code>&lt;aside&gt;</code>
+                <code>&lt;footer&gt;</code>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <!-- Card 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="dj-hover-card h-100">
-            <div class="dhc-icon dhc-icon--teal">
-              <i class="bi bi-distribute-horizontal"></i>
-            </div>
-            <h3 class="dhc-title">CSS Flexbox</h3>
-            <p class="dhc-desc">
-              Flexbox provides one-dimensional layout control — rows or columns —
-              letting you align, space, and order elements without old float or table hacks.
-            </p>
-            <div class="dhc-flex-props">
-              <div class="fp-row"><code>display: flex</code><span>activate</span></div>
-              <div class="fp-row"><code>flex-direction</code><span>row / column</span></div>
-              <div class="fp-row"><code>justify-content</code><span>main axis</span></div>
-              <div class="fp-row"><code>align-items</code><span>cross axis</span></div>
-              <div class="fp-row"><code>flex-wrap</code><span>overflow</span></div>
-            </div>
-          </article>
-        </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="dj-hover-card h-100">
+              <div class="dhc-icon dhc-icon--rose">
+                <i class="bi bi-layout-three-columns"></i>
+              </div>
+              <h3 class="dhc-title">Bootstrap 12-Col Grid</h3>
+              <p class="dhc-desc">
+                Bootstrap wraps CSS Flexbox into a named, breakpoint-driven 12-column system.
+                Columns collapse on mobile and expand at higher viewports mobile-first by default.
+              </p>
+              <!-- Mini visual grid -->
+              <div class="mini-grid">
+                <div class="mg-row">
+                  <div class="mg-col full"><code>col-12</code></div>
+                </div>
+                <div class="mg-row">
+                  <div class="mg-col half"><code>col-md-6</code></div>
+                  <div class="mg-col half"><code>col-md-6</code></div>
+                </div>
+                <div class="mg-row">
+                  <div class="mg-col third"><code>col-lg-4</code></div>
+                  <div class="mg-col third"><code>col-lg-4</code></div>
+                  <div class="mg-col third"><code>col-lg-4</code></div>
+                </div>
+              </div>
+            </article>
+          </div>
 
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="dj-hover-card h-100">
+              <div class="dhc-icon dhc-icon--teal">
+                <i class="bi bi-distribute-horizontal"></i>
+              </div>
+              <h3 class="dhc-title">CSS Flexbox</h3>
+              <p class="dhc-desc">
+                Flexbox provides one-dimensional layout control rows or columns
+                letting you align, space, and order elements without old float or table hacks.
+              </p>
+              <div class="dhc-flex-props">
+                <div class="fp-row"><code>display: flex</code><span>activate</span></div>
+                <div class="fp-row"><code>flex-direction</code><span>row / column</span></div>
+                <div class="fp-row"><code>justify-content</code><span>main axis</span></div>
+                <div class="fp-row"><code>align-items</code><span>cross axis</span></div>
+                <div class="fp-row"><code>flex-wrap</code><span>overflow</span></div>
+              </div>
+            </article>
+          </div>
+
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ──────────────────────────────────────────────────────────
-       SECTION 4 — CSS3 MOTION & KEYFRAME ENGINE
+    <!-- ──────────────────────────────────────────────────────────
+       SECTION 4  CSS3 MOTION & KEYFRAME ENGINE
        Requirement: animated element + 3 @keyframes buttons
        ────────────────────────────────────────────────────────── -->
-  <section id="css-motion" class="dj-section" aria-labelledby="motion-title">
-    <div class="container-xl">
+    <section id="css-motion" class="dj-section" aria-labelledby="motion-title">
+      <div class="container-xl">
 
-      <div class="dj-section-head">
-        <span class="dj-eyebrow">04 / CSS3 Motion</span>
-        <h2 class="dj-section-title" id="motion-title">The animation engine</h2>
-        <p class="dj-section-sub">
-          Custom <code>@keyframes</code> animations applied on demand —
-          beyond anything Bootstrap ships. Click a control to fire it.
-        </p>
-      </div>
-
-      <div class="row align-items-center g-5">
-
-        <!-- Animated target -->
-        <div class="col-12 col-lg-6 d-flex justify-content-center">
-          <div class="motion-stage" aria-live="polite">
-            <div id="animTarget" class="anim-target" aria-label="Animated element">
-              <div class="at-inner">
-                <span class="at-letter">D</span>
-              </div>
-              <div class="at-ring at-ring--1"></div>
-              <div class="at-ring at-ring--2"></div>
-            </div>
-            <p class="anim-state-label" id="animLabel">idle</p>
-          </div>
+        <div class="dj-section-head">
+          <span class="dj-eyebrow">04 / CSS3 Motion</span>
+          <h2 class="dj-section-title" id="motion-title">The animation engine</h2>
+          <p class="dj-section-sub">
+            Custom <code>@keyframes</code> animations applied on demand
+            beyond anything Bootstrap ships. Click a control to fire it.
+          </p>
         </div>
 
-        <!-- Controls -->
-        <div class="col-12 col-lg-6">
-          <div class="motion-controls">
+        <div class="row align-items-center g-5">
 
-            <div class="mc-row">
-              <div class="mc-info">
-                <h4 class="mc-name">Pulse</h4>
-                <p class="mc-detail">
-                  <code>@keyframes localizedPulse</code> — continuous scale oscillation
-                  via <code>transform: scale()</code>
-                </p>
+          <!-- Animated target -->
+          <div class="col-12 col-lg-6 d-flex justify-content-center">
+            <div class="motion-stage" aria-live="polite">
+              <div id="animTarget" class="anim-target" aria-label="Animated element">
+                <div class="at-inner">
+                  <span class="at-letter">D</span>
+                </div>
+                <div class="at-ring at-ring--1"></div>
+                <div class="at-ring at-ring--2"></div>
               </div>
-              <button id="btnPulse" class="mc-btn mc-btn--amber" onclick="triggerAnimation('pulse')">
-                <i class="bi bi-activity me-1"></i>Pulse
-              </button>
+              <p class="anim-state-label" id="animLabel">idle</p>
             </div>
-
-            <div class="mc-row">
-              <div class="mc-info">
-                <h4 class="mc-name">Spin</h4>
-                <p class="mc-detail">
-                  <code>@keyframes localizedSpin</code> — rapid 180° rotation
-                  via <code>transform: rotate()</code>
-                </p>
-              </div>
-              <button id="btnSpin" class="mc-btn mc-btn--rose" onclick="triggerAnimation('spin')">
-                <i class="bi bi-arrow-repeat me-1"></i>Spin
-              </button>
-            </div>
-
-            <div class="mc-row">
-              <div class="mc-info">
-                <h4 class="mc-name">Bounce</h4>
-                <p class="mc-detail">
-                  <code>@keyframes localizedBounce</code> — vertical displacement
-                  via <code>transform: translateY()</code>
-                </p>
-              </div>
-              <button id="btnBounce" class="mc-btn mc-btn--teal" onclick="triggerAnimation('bounce')">
-                <i class="bi bi-skip-start me-1"></i>Bounce
-              </button>
-            </div>
-
-            <button class="mc-reset" onclick="resetAnimation()">
-              <i class="bi bi-arrow-counterclockwise me-2"></i>Reset to idle
-            </button>
-
           </div>
+
+          <!-- Controls -->
+          <div class="col-12 col-lg-6">
+            <div class="motion-controls">
+
+              <div class="mc-row">
+                <div class="mc-info">
+                  <h4 class="mc-name">Pulse</h4>
+                  <p class="mc-detail">
+                    <code>@keyframes localizedPulse</code> continuous scale oscillation
+                    via <code>transform: scale()</code>
+                  </p>
+                </div>
+                <button id="btnPulse" class="mc-btn mc-btn--amber" onclick="triggerAnimation('pulse')">
+                  <i class="bi bi-activity me-1"></i>Pulse
+                </button>
+              </div>
+
+              <div class="mc-row">
+                <div class="mc-info">
+                  <h4 class="mc-name">Spin</h4>
+                  <p class="mc-detail">
+                    <code>@keyframes localizedSpin</code> rapid 180° rotation
+                    via <code>transform: rotate()</code>
+                  </p>
+                </div>
+                <button id="btnSpin" class="mc-btn mc-btn--rose" onclick="triggerAnimation('spin')">
+                  <i class="bi bi-arrow-repeat me-1"></i>Spin
+                </button>
+              </div>
+
+              <div class="mc-row">
+                <div class="mc-info">
+                  <h4 class="mc-name">Bounce</h4>
+                  <p class="mc-detail">
+                    <code>@keyframes localizedBounce</code> vertical displacement
+                    via <code>transform: translateY()</code>
+                  </p>
+                </div>
+                <button id="btnBounce" class="mc-btn mc-btn--teal" onclick="triggerAnimation('bounce')">
+                  <i class="bi bi-skip-start me-1"></i>Bounce
+                </button>
+              </div>
+
+              <button class="mc-reset" onclick="resetAnimation()">
+                <i class="bi bi-arrow-counterclockwise me-2"></i>Reset to idle
+              </button>
+
+            </div>
+          </div>
+
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ──────────────────────────────────────────────────────────
-       SECTION 5 — JS STATE ENGINE & TERMINAL
+    <!-- ──────────────────────────────────────────────────────────
+       SECTION 5  JS STATE ENGINE & TERMINAL
        Requirement: Terminal CLI + Counter with log injection
        ────────────────────────────────────────────────────────── -->
-  <section id="js-engine" class="dj-section dj-section--alt" aria-labelledby="js-title">
-    <div class="container-xl">
+    <section id="js-engine" class="dj-section dj-section--alt" aria-labelledby="js-title">
+      <div class="container-xl">
 
-      <div class="dj-section-head">
-        <span class="dj-eyebrow">05 / JavaScript State Engine</span>
-        <h2 class="dj-section-title" id="js-title">Live state, no reload</h2>
-        <p class="dj-section-sub">
-          DOM mutation and state management in pure ES6+. Every interaction
-          happens in-place — no framework, no page refresh.
-        </p>
-      </div>
-
-      <div class="row g-4">
-
-        <!-- Terminal -->
-        <div class="col-12 col-lg-7">
-          <div class="dj-terminal" role="region" aria-label="Interactive terminal">
-            <div class="dj-code-bar">
-              <span class="dot dot-r"></span><span class="dot dot-a"></span><span class="dot dot-g"></span>
-              <span class="code-filename">dijdahal — terminal</span>
-            </div>
-            <div id="termOutput" class="term-output" aria-live="polite">
-              <div class="tl tl--sys">
-                <span class="tp">sys</span>
-                <span class="tt">Dijdahal Terminal v1.0 — type <strong>help</strong> for commands</span>
-              </div>
-              <div class="tl tl--sys">
-                <span class="tp">sys</span>
-                <span class="tt">Session started <span id="sessionTime"></span></span>
-              </div>
-            </div>
-            <div class="term-input-row">
-              <span class="tip">dijdahal:~$</span>
-              <input id="termInput" type="text" class="term-field"
-                placeholder="type a command…" autocomplete="off"
-                aria-label="Terminal input" />
-              <button class="term-send" onclick="executeCommand()" aria-label="Run command">
-                <i class="bi bi-arrow-return-left"></i>
-              </button>
-            </div>
-          </div>
+        <div class="dj-section-head">
+          <span class="dj-eyebrow">05 / JavaScript State Engine</span>
+          <h2 class="dj-section-title" id="js-title">Live state, no reload</h2>
+          <p class="dj-section-sub">
+            DOM mutation and state management in pure ES6+. Every interaction
+            happens in-place no framework, no page refresh.
+          </p>
         </div>
 
-        <!-- Counter -->
-        <div class="col-12 col-lg-5">
-          <div class="dj-counter" role="region" aria-label="Counter state tracker">
-            <div class="dj-code-bar">
-              <span class="dot dot-r"></span><span class="dot dot-a"></span><span class="dot dot-g"></span>
-              <span class="code-filename">state.js</span>
-            </div>
-            <div class="counter-body">
-              <p class="counter-var-label"><code>let <span class="jv">counterState</span> =</code></p>
-              <div class="counter-display" aria-live="polite" aria-atomic="true">
-                <span id="counterValue" class="counter-num">0</span>
+        <div class="row g-4">
+
+          <!-- Terminal -->
+          <div class="col-12 col-lg-7">
+            <div class="dj-terminal" role="region" aria-label="Interactive terminal">
+              <div class="dj-code-bar">
+                <span class="dot dot-r"></span><span class="dot dot-a"></span><span class="dot dot-g"></span>
+                <span class="code-filename">dijdahal terminal</span>
               </div>
-              <div class="counter-btns">
-                <button class="c-btn c-btn--dec" onclick="updateCounter(-1)" aria-label="Decrement">
-                  <i class="bi bi-dash-lg"></i>
-                </button>
-                <button class="c-btn c-btn--inc" onclick="updateCounter(1)" aria-label="Increment">
-                  <i class="bi bi-plus-lg"></i>
-                </button>
+              <div id="termOutput" class="term-output" aria-live="polite">
+                <div class="tl tl--sys">
+                  <span class="tp">sys</span>
+                  <span class="tt">Dijdahal Terminal v1.0 type <strong>help</strong> for commands</span>
+                </div>
+                <div class="tl tl--sys">
+                  <span class="tp">sys</span>
+                  <span class="tt">Session started <span id="sessionTime"></span></span>
+                </div>
               </div>
-              <button class="mc-reset w-100 mt-3" onclick="resetCounter()">
-                <i class="bi bi-arrow-counterclockwise me-2"></i>Reset state
-              </button>
-              <div class="counter-meta">
-                <div class="cm-row"><span>Increments</span><strong id="totalInc">0</strong></div>
-                <div class="cm-row"><span>Decrements</span><strong id="totalDec">0</strong></div>
-                <div class="cm-row"><span>Total changes</span><strong id="totalChanges">0</strong></div>
+              <div class="term-input-row">
+                <span class="tip">dijdahal:~$</span>
+                <input id="termInput" type="text" class="term-field" placeholder="type a command…" autocomplete="off"
+                  aria-label="Terminal input" />
+                <button class="term-send" onclick="executeCommand()" aria-label="Run command">
+                  <i class="bi bi-arrow-return-left"></i>
+                </button>
               </div>
             </div>
           </div>
+
+          <!-- Counter -->
+          <div class="col-12 col-lg-5">
+            <div class="dj-counter" role="region" aria-label="Counter state tracker">
+              <div class="dj-code-bar">
+                <span class="dot dot-r"></span><span class="dot dot-a"></span><span class="dot dot-g"></span>
+                <span class="code-filename">state.js</span>
+              </div>
+              <div class="counter-body">
+                <p class="counter-var-label"><code>let <span class="jv">counterState</span> =</code></p>
+                <div class="counter-display" aria-live="polite" aria-atomic="true">
+                  <span id="counterValue" class="counter-num">0</span>
+                </div>
+                <div class="counter-btns">
+                  <button class="c-btn c-btn--dec" onclick="updateCounter(-1)" aria-label="Decrement">
+                    <i class="bi bi-dash-lg"></i>
+                  </button>
+                  <button class="c-btn c-btn--inc" onclick="updateCounter(1)" aria-label="Increment">
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <button class="mc-reset w-100 mt-3" onclick="resetCounter()">
+                  <i class="bi bi-arrow-counterclockwise me-2"></i>Reset state
+                </button>
+                <div class="counter-meta">
+                  <div class="cm-row"><span>Increments</span><strong id="totalInc">0</strong></div>
+                  <div class="cm-row"><span>Decrements</span><strong id="totalDec">0</strong></div>
+                  <div class="cm-row"><span>Total changes</span><strong id="totalChanges">0</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-</main>
+  </main>
 
-<!-- ═══════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════
      FOOTER
      ═══════════════════════════════════════════════════════════ -->
-<footer class="dj-footer" role="contentinfo">
-  <div class="container-xl">
-    <div class="row align-items-center g-3">
-      <div class="col-12 col-md-6">
-        <p class="dj-wordmark"><span class="wm-dij">dij</span><span class="wm-dahal">dahal</span></p>
-        <p class="footer-note">CET138 Full Stack Development — Assignment 1</p>
-      </div>
-      <div class="col-12 col-md-6 text-md-end">
-        <p class="footer-note">Bootstrap 5.3 · Bootstrap Icons · Vanilla JS ES6+</p>
-        <p class="footer-note">© 2025 Dijdahal · First-Year IT Student ePortfolio</p>
+  <footer class="dj-footer" role="contentinfo">
+    <div class="container-xl">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-6">
+          <p class="dj-wordmark"><span class="wm-dij">dij</span><span class="wm-dahal">dahal</span></p>
+          <p class="footer-note">CET138 Full Stack Development Assignment 1</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <p class="footer-note">Bootstrap 5.3 · Bootstrap Icons · Vanilla JS ES6+</p>
+          <p class="footer-note">© 2025 Dijdahal · First-Year IT Student ePortfolio</p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmFRcOHgkJOjE36lE1FwBX4E9Bq"
-  crossorigin="anonymous"></script>
-<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmFRcOHgkJOjE36lE1FwBX4E9Bq" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
